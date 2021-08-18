@@ -3,7 +3,7 @@ import time
 from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
 
-
+# this is naukir page login and update profile
 class NaukriLoginPage:
     link_lgoin = "login_Layer"
     txt_naukri_user = "//input[@placeholder='Enter your active Email ID / Username']"
