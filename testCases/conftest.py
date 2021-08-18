@@ -7,11 +7,14 @@ def setup(browser='chrome'):
     if browser == 'chrome':
         driverpath = "C:\\Users\\amq5708\\Desktop\\Py\\HybridFramework\\chromedriver.exe"
         driver = webdriver.Chrome(executable_path=driverpath)
+        driver.maximize_window()
         print("Launching chrome browser.........")
         return driver
     else:
         print("browser not available for run")
         assert False
+
+
 
 
 def pytest_addoption(parser):    # This will get the value from CLI /hooks

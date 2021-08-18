@@ -16,7 +16,7 @@ class Test_001_Login():
 
     log = LogGen.loggen()
 
-    @pytest.mark.sanity
+    #@pytest.mark.sanity
     def test_verifylogin(self, setup):
         self.log.info("*******************Verify Login test case started")
         self.driver = setup
@@ -29,7 +29,7 @@ class Test_001_Login():
         self.driver.close()
         self.log.info("*******************Verify Login test case ended")
 
-    @pytest.mark.regression
+    #@pytest.mark.regression
     def test_verifylogin2(self, setup):
         self.log.info("*******************Verify Login test case started_____2")
         self.driver = setup

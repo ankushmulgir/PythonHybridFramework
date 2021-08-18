@@ -4,9 +4,12 @@ import time
 from selenium.webdriver.common.by import By
 
 from selenium import webdriver
+from selenium.webdriver.remote.webelement import WebElement
 
 
 class Login:
+
+
     # txt_username = (By.ID, "Email")
     # txt_password = By.ID, "Password"
     # login_btn = By.XPATH, "input[@class='button-1 login-button']"
@@ -19,6 +22,7 @@ class Login:
         self.driver = driver
 
     def login_app(self, username, password):
+
         self.driver.find_element_by_id(self.txt_username).clear()
         self.driver.find_element_by_id(self.txt_username).send_keys(username)
         self.driver.find_element_by_id(self.txt_password).clear()
