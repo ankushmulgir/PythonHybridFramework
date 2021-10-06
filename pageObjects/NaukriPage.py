@@ -55,6 +55,7 @@ class NaukriLoginPage:
         time.sleep(30)
 
         #commit
+        #2dnd
 
 
 
