@@ -1,0 +1,4 @@
+pytest==6.2.4
+openpyxl==3.0.6
+webdriver_manager==2.2.0
+selenium==3.141.0
