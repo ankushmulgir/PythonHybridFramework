@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 @pytest.fixture()
@@ -7,6 +8,8 @@ def setup(browser='chrome'):
     if browser == 'chrome':
         driverpath = "C:\\Users\\amq5708\\Desktop\\Py\\HybridFramework\\chromedriver.exe"
         driver = webdriver.Chrome(executable_path=driverpath)
+        # using driver manager
+        #driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.maximize_window()
         print("Launching chrome browser.........")
         return driver

@@ -54,6 +54,8 @@ class NaukriLoginPage:
         self.driver.find_element_by_xpath(self.btn_save_resume_headline).click()
         time.sleep(30)
 
+        #commit
+
 
 
 
