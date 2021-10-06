@@ -9,4 +9,5 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g bats
-      - run: run.bat -v
+      - run: pip install \requirements.txt
+      - run: pytest -s -v -m "sanity" --html=./Reports/report.html testCases/
