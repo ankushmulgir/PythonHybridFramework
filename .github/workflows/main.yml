@@ -10,4 +10,4 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: pip install -r requirements.txt
-      - run: pytest testCases/
+      - run: pytest testCases/test_Naukri.py
